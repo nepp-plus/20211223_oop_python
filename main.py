@@ -17,3 +17,11 @@ print(b)
 
 
 print(f'11과 15의 합은 {add_two_numbers(11, 15)}입니다.') 
+
+
+# 결과가 없는 함수 예시.
+
+def print_my_name(my_name):
+    print(f'제 이름은 {my_name} 입니다.')
+    
+print_my_name('조경진')
