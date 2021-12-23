@@ -43,3 +43,13 @@ def minus_two_numbers(num1,  num2):
 # 파라미터의 순서와 관계 없다.
 result01 = minus_two_numbers(num2=7, num1=10)
 print( f'뺄셈 함수 사용 결과 : {result01}' )
+
+
+# bool 값에 따라 다른 문구 출력 함수.
+def print_test(my_bool=True):
+    if my_bool:
+        print('True가 들어왔습니다.')
+    else:
+        print('False가 들어왔습니다.')
+        
+print_test()
