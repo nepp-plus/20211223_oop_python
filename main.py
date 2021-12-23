@@ -72,3 +72,13 @@ print(sum_result1)
 
 sum_result2 = sum_many_numbers(4,5,6,7,8,9)
 print(sum_result2)
+
+
+# 여러개의 (이름을 붙인) 파라미터를 필요한만큼 받아서 출력.
+def print_many_params( **kwargs ):  #kw : keyword,  args : arguments
+    print(kwargs)
+    # 임시 코드 => name 이름표로 받아온 값을 출력.
+    print( kwargs['name'] )
+    
+    
+print_many_params( name='조경진', birth_year=1988, phone_num = '010-5112-3237' )
