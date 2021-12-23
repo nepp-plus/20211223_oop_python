@@ -53,3 +53,22 @@ def print_test(my_bool=True):
         print('False가 들어왔습니다.')
         
 print_test()
+
+
+# 필요한 만큼 전달인자 (arguments)를 넣으면, 모든 수의 합을 계산.
+def sum_many_numbers( *args ):
+    # args는 목록으로 들어옴. (여러개 담고 있다)
+    
+    result = 0
+    for num in args:
+        result += num
+    
+    return result
+        
+
+
+sum_result1 = sum_many_numbers(1,2,3)
+print(sum_result1)
+
+sum_result2 = sum_many_numbers(4,5,6,7,8,9)
+print(sum_result2)
