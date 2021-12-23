@@ -34,3 +34,12 @@ def get_my_age():
 
 age =  get_my_age()
 print(age)
+
+# 뺄셈 수행 함수. => 파라미터의 대입 순서가 중요한 함수.
+def minus_two_numbers(num1,  num2):
+    return num1 - num2
+
+# 어느 파라미터에, 어떤 값 대입 직접 지정.
+# 파라미터의 순서와 관계 없다.
+result01 = minus_two_numbers(num2=7, num1=10)
+print( f'뺄셈 함수 사용 결과 : {result01}' )
