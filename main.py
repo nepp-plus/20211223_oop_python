@@ -57,7 +57,7 @@ print_test()
 
 # 필요한 만큼 전달인자 (arguments)를 넣으면, 모든 수의 합을 계산.
 def sum_many_numbers( *args ):
-    # args는 목록으로 들어옴. (여러개 담고 있다)
+    # args는 목록 (list)으로 들어옴. (여러개 담고 있다)
     
     result = 0
     for num in args:
@@ -77,7 +77,7 @@ print(sum_result2)
 # 여러개의 (이름을 붙인) 파라미터를 필요한만큼 받아서 출력.
 def print_many_params( **kwargs ):  #kw : keyword,  args : arguments
     print(kwargs)
-    # 임시 코드 => name 이름표로 받아온 값을 출력.
+    # kwargs : dictionary 형태가 되어 들어온다.
     print( kwargs['name'] )
     
     
@@ -93,4 +93,15 @@ user_info['phone_num'] = '010-5112-3237'
 
 # 실제 대입값 (value)는 자료형을 가리지 않는다.
 
+# dictionary의 항목을 => list 대입.
+friends = ['김친구', '이학생', '박선생']
+user_info['friends'] =  friends
+
+# dictionary의 항목으로 => dictionary 대입.
+school_info = { 'name':'서울시립대', 'member_count':12000 }
+
+user_info['school'] = school_info
+
 print(f'사용자 정보 : {user_info}')
+
+print(user_info['birth_year'])
