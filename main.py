@@ -1,5 +1,8 @@
 # 동작을 어떻게 해야하는지 정리하는 코드.
 
+from book import Book
+
+
 print('책방 관리 프로그램을 시작합니다.')
 
 
@@ -105,3 +108,11 @@ user_info['school'] = school_info
 print(f'사용자 정보 : {user_info}')
 
 print(user_info['birth_year'])
+
+
+# 책 한권을 만들고, 제목 / 대여료 설정.
+book1 = Book()
+
+book1.set_data('드래곤볼', 1000)
+
+print(f'{book1.title} 의 대여료 : {book1.rent_fee}')
